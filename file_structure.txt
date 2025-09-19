@@ -1,26 +1,36 @@
 RiskManagementApp/
- ├─ app/
- │   ├─ src/main/java/com/example/riskapp/
- │   │   ├─ models/
- │   │   │   ├─ User.kt
- │   │   │   └─ Job.kt
- │   │   ├─ adapters/
- │   │   │   └─ JobAdapter.kt
- │   │   ├─ ui/
- │   │   │   ├─ LoginActivity.kt
- │   │   │   ├─ SignupActivity.kt
- │   │   │   ├─ MainActivity.kt        // job list + navigation
- │   │   │   ├─ CreateJobActivity.kt
- │   │   │   └─ JobDetailActivity.kt
- │   │   └─ Utils.kt
- │   ├─ src/main/res/layout/
- │   │   ├─ activity_login.xml
- │   │   ├─ activity_signup.xml
- │   │   ├─ activity_main.xml
- │   │   ├─ activity_create_job.xml
- │   │   ├─ activity_job_detail.xml
- │   │   └─ item_job.xml
- │   ├─ src/main/AndroidManifest.xml
- │   └─ google-services.json  (from Firebase console)
- └─ web-dashboard/
-     └─ index.html
+├─ build.gradle (project)
+├─ settings.gradle
+├─ gradle/...
+├─ app/
+│  ├─ build.gradle (module)
+│  ├─ google-services.json            <-- replace with your Firebase file
+│  ├─ src/
+│  │  └─ main/
+│  │     ├─ AndroidManifest.xml
+│  │     ├─ java/com/example/riskmanagement/
+│  │     │  ├─ MyApp.kt
+│  │     │  ├─ models/
+│  │     │  │  ├─ JobModel.kt
+│  │     │  │  └─ UserModel.kt
+│  │     │  ├─ adapters/
+│  │     │  │  └─ JobAdapter.kt
+│  │     │  ├─ activities/
+│  │     │  │  ├─ SignupActivity.kt
+│  │     │  │  ├─ LoginActivity.kt
+│  │     │  │  ├─ DashboardActivity.kt
+│  │     │  │  └─ CreateJobActivity.kt
+│  │     └─ res/
+│  │        ├─ layout/
+│  │        │  ├─ activity_signup.xml
+│  │        │  ├─ activity_login.xml
+│  │        │  ├─ activity_dashboard.xml
+│  │        │  ├─ activity_create_job.xml
+│  │        │  └─ item_job.xml
+│  │        ├─ values/
+│  │        │  ├─ strings.xml
+│  │        │  └─ colors.xml
+│  │        └─ drawable/...
+└─ web-dashboard/
+   └─ index.html
+   └─ firebase-config-placeholder.js
