@@ -1,0 +1,26 @@
+RiskManagementApp/
+ ├─ app/
+ │   ├─ src/main/java/com/example/riskapp/
+ │   │   ├─ models/
+ │   │   │   ├─ User.kt
+ │   │   │   └─ Job.kt
+ │   │   ├─ adapters/
+ │   │   │   └─ JobAdapter.kt
+ │   │   ├─ ui/
+ │   │   │   ├─ LoginActivity.kt
+ │   │   │   ├─ SignupActivity.kt
+ │   │   │   ├─ MainActivity.kt        // job list + navigation
+ │   │   │   ├─ CreateJobActivity.kt
+ │   │   │   └─ JobDetailActivity.kt
+ │   │   └─ Utils.kt
+ │   ├─ src/main/res/layout/
+ │   │   ├─ activity_login.xml
+ │   │   ├─ activity_signup.xml
+ │   │   ├─ activity_main.xml
+ │   │   ├─ activity_create_job.xml
+ │   │   ├─ activity_job_detail.xml
+ │   │   └─ item_job.xml
+ │   ├─ src/main/AndroidManifest.xml
+ │   └─ google-services.json  (from Firebase console)
+ └─ web-dashboard/
+     └─ index.html
