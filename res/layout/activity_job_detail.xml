@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+      <TextView android:id="@+id/tvTitle" android:textStyle="bold" android:textSize="20sp"/>
+      <TextView android:id="@+id/tvDesc"/>
+      <TextView android:id="@+id/tvRisks"/>
+      <TextView android:id="@+id/tvAssigned"/>
+      <TextView android:id="@+id/tvStatus"/>
+      <TextView android:id="@+id/tvCreatedAt"/>
+      <TextView android:id="@+id/tvValidity"/>
+
+      <Button android:id="@+id/btnApprove" android:layout_marginTop="12dp" android:visibility="gone" android:text="Approve"/>
+      <Button android:id="@+id/btnReject" android:layout_marginTop="8dp" android:visibility="gone" android:text="Reject"/>
+      <Button android:id="@+id/btnStart" android:layout_marginTop="8dp" android:visibility="gone" android:text="Start Job"/>
+      <Button android:id="@+id/btnClose" android:layout_marginTop="8dp" android:visibility="gone" android:text="Close Job"/>
+  </LinearLayout>
+</ScrollView>
