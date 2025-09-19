@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="16dp">
+
+      <EditText android:id="@+id/etTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Job title"/>
+      <EditText android:id="@+id/etDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Description" android:inputType="textMultiLine" android:minLines="3" android:layout_marginTop="8dp"/>
+
+      <TextView android:layout_marginTop="8dp" android:text="Select Risks (checkboxes)"/>
+      <!-- We'll add checkboxes programmatically to keep easy -->
+      <LinearLayout android:id="@+id/llRisks" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+      <EditText android:id="@+id/etExtraRisk" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Other risks (optional)" android:layout_marginTop="8dp"/>
+
+      <TextView android:text="Assign Manager" android:layout_marginTop="12dp"/>
+      <Spinner android:id="@+id/spinnerManagers" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+      <TextView android:text="Permit validity" android:layout_marginTop="12dp"/>
+      <Button android:id="@+id/btnPickDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pick date/time"/>
+      <TextView android:id="@+id/tvValidity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No date selected"/>
+
+      <Button android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Save Job" android:layout_marginTop="16dp"/>
+  </LinearLayout>
+</ScrollView>
